@@ -1,0 +1,52 @@
+body{
+    background-image: url(images/Design\ sem\ nome.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    font-size: 40px;
+    color: rgb(62, 62, 146);
+    text-align: center;
+}
+
+.colecao{
+    display: flex;
+    justify-content: space-evenly; /* distribui na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    height: 100%;  /* ocupa a tela máxima */
+
+    margin-top: 70px;
+    /*border: 3px solid yellow;*/
+    padding: 50px;
+
+    /*overflow-x: scroll;*/
+    flex-flow: row wrap;
+}
+
+.livro{
+    width: fit-content;
+    border: 3px solid;
+    margin-right: 50px;
+    margin-bottom: 70px; /*caso vá usar o flex-flow: row wrap*/
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.livro img{
+    width: 400px;
+    height: 500px;
+}
+
+.livro a:hover img{
+    width: 450px;
+    height: 550px;
+}
+
+.livro p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
